@@ -1,0 +1,143 @@
+var StatePopulationMapping = 
+[
+  {
+    "StateName": "Uttar Pradesh",
+    "Population": 199812341
+  },
+  {
+    "StateName": "Maharashtra",
+    "Population": 112374333
+  },
+  {
+    "StateName": "Bihar",
+    "Population": 104099452
+  },
+  {
+    "StateName": "West Bengal",
+    "Population": 91276115
+  },
+  {
+    "StateName": "Andhra Pradesh",
+    "Population": 84580777
+  },
+  {
+    "StateName": "Madhya Pradesh",
+    "Population": 72626809
+  },
+  {
+    "StateName": "Tamil Nadu",
+    "Population": 72147030
+  },
+  {
+    "StateName": "Rajasthan",
+    "Population": 68548437
+  },
+  {
+    "StateName": "Karnataka",
+    "Population": 61095297
+  },
+  {
+    "StateName": "Gujarat",
+    "Population": 60439692
+  },
+  {
+    "StateName": "Orissa",
+    "Population": 41974218
+  },
+  {
+    "StateName": "Kerala",
+    "Population": 33406061
+  },
+  {
+    "StateName": "Jharkhand",
+    "Population": 32988134
+  },
+  {
+    "StateName": "Assam",
+    "Population": 31205576
+  },
+  {
+    "StateName": "Punjab",
+    "Population": 27743338
+  },
+  {
+    "StateName": "Chhattisgarh",
+    "Population": 25545198
+  },
+  {
+    "StateName": "Haryana",
+    "Population": 25351462
+  },
+  {
+    "StateName": "Delhi",
+    "Population": 16787941
+  },
+  {
+    "StateName": "Jammu and Kashmir",
+    "Population": 12541302
+  },
+  {
+    "StateName": "Uttarakhand",
+    "Population": 10086292
+  },
+  {
+    "StateName": "Himachal Pradesh",
+    "Population": 6864602
+  },
+  {
+    "StateName": "Tripura",
+    "Population": 3673917
+  },
+  {
+    "StateName": "Meghalaya",
+    "Population": 2966889
+  },
+  {
+    "StateName": "Manipur",
+    "Population": 2855794
+  },
+  {
+    "StateName": "Nagaland",
+    "Population": 1978502
+  },
+  {
+    "StateName": "Goa",
+    "Population": 1458545
+  },
+  {
+    "StateName": "Arunachal Pradesh",
+    "Population": 1383727
+  },
+  {
+    "StateName": "Puducherry",
+    "Population": 1247953
+  },
+  {
+    "StateName": "Mizoram",
+    "Population": 1097206
+  },
+  {
+    "StateName": "Chandigarh",
+    "Population": 1055450
+  },
+  {
+    "StateName": "Sikkim",
+    "Population": 610577
+  },
+  {
+    "StateName": "Andaman and Nicobar Islands",
+    "Population": 380581
+  },
+  {
+    "StateName": "Dadra and Nagar Haveli",
+    "Population": 343709
+  },
+  {
+    "StateName": "Daman and Diu",
+    "Population": 243247
+  },
+  {
+    "StateName": "Lakshadweep",
+    "Population": 64473
+  }
+];
