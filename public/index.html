@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="main.css"> <!--Including main.css-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="jquery.js"></script>         Including districtPopulation.json  -->
 <script src="criteriaMatching.js"></script>							<!--Including criteriaMatching.js-->
 <script src="statePopulation.json"></script>            <!--Including statePopulation.json-->
 <script src="districtPopulation.json"></script>         <!--Including districtPopulation.json-->
@@ -27,6 +29,7 @@
   //Listen for Submit
     matchingForm.addEventListener("submit", matchingCriteria);
   }
+  
 </script>
 
 </head>
@@ -44,21 +47,21 @@
     <!-- <strong>Enter Name: </strong> -->
     <form id="matching_form">
       <div>
-        <input type="text" name="candidate_name" id="candidate_name" class="form-control form-control-default" placeholder="Candidate Name"></br>
+        <input type="text" name="candidate_name" id="candidate_name" value="Candidate" class="form-control form-control-default" placeholder="Candidate Name"></br>
       </div>
 
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <div class="form-group">
             <strong>Number of Initials: </strong>
-            <input type="text" name="initials_number" id="initials_number" class="form-control input-default" placeholder="Number of Initials">
+            <input type="text" name="initials_number" id="initials_number" value="0" class="form-control input-default" placeholder="Number of Initials">
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-6">
           <div class="form-group">
             <strong>Number of People with the Same Name in the State: </strong>
-            <input type="text" name="without_initials" id="without_initials" class="form-control input-default" placeholder="Same Name Without Initials">
+            <input type="text" name="without_initials" id="without_initials" value="0" class="form-control input-default" placeholder="Same Name Without Initials">
           </div>
         </div>
       </div>

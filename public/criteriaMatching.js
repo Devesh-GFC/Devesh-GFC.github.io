@@ -100,21 +100,21 @@ function matchingCriteria (e) {
         return false;
       } else {
         MatchingPopulation = (1/withoutInitials)*100;
-        matchingPercentage = Math.round(MatchingPopulation) + "%";
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
     }
     else if (typeMatch == "State") {
       //alert("State");
         MatchingPopulation = (1/WI)*100;
-        matchingPercentage = Math.round(MatchingPopulation) + "%";
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
     }
     else if (typeMatch == "District") {
       //alert("District");
       if (districtPopulation > 0) {
         MatchingPopulation = Math.pow((1-districtPopulation/statePopulation), (WI-1))*100;
-        matchingPercentage = Math.round(MatchingPopulation) + "%";
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
       else {
@@ -130,7 +130,7 @@ function matchingCriteria (e) {
 
       if (pincodePopulation > 0) {
         MatchingPopulation = Math.pow((1-pincodePopulation/statePopulation), (WI-1))*100;
-        matchingPercentage = Math.round(MatchingPopulation) + "%";
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
       else {
@@ -146,7 +146,7 @@ function matchingCriteria (e) {
 
       if (sub_regionPopulation > 0) {
         MatchingPopulation = Math.pow((1-sub_regionPopulation/statePopulation), (WI-1))*100;
-        matchingPercentage = Math.round(MatchingPopulation) + "%";
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
       else {
@@ -158,6 +158,18 @@ function matchingCriteria (e) {
       alert("Cannot Found Data");
       return false;
     }
+    // alert(MatchingPopulation);
+
+    
+
+    // function f_color() {
+    //   alert("In f_color");
+    //   document.getElementById("matchingPercentage_Output").style.backgroundColor = "green";
+    //   $('#matchingPercentage_Output ul li').css('backgroundColor','green');
+    //   alert("After Color");
+    // }
+
+    matchingPercentage = Math.round(MatchingPopulation) + "%";
 
 
     // Formatted Output
@@ -229,4 +241,12 @@ function matchingCriteria (e) {
     document.getElementById("districtPopulation_Output").innerHTML = districtPopulationOutput;
     document.getElementById("statePopulation_Output").innerHTML = statePopulationOutput;
     document.getElementById("matchingPercentage_Output").innerHTML = matchingPercentageOutput;
+
+    if(MatchingPopulation > 25){
+      // alert('dfbhdbfdf');
+     $('#matchingPercentage_Output ul li').css('background','red');
+     // document.getElementById("matchingPercentage_Output ul li").style.backgroundColor = "green";
+    }else{
+      $('#matchingPercentage_Output ul li').css('background','green');
+    }
   }
