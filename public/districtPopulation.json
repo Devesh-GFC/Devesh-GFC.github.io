@@ -2916,7 +2916,7 @@ var DistrictPopulationMapping =
     "Population": 242285
   },
   {
-    "StateName": "Andaman And Nicobar Islands",
+    "StateName": "Andaman_and_Nicobar_Islands",
     "DistrictName": "South Andaman",
     "Population": 238142
   },
@@ -3066,7 +3066,7 @@ var DistrictPopulationMapping =
     "Population": 111975
   },
   {
-    "StateName": "Andaman And Nicobar Islands",
+    "StateName": "Andaman_and_Nicobar_Islands",
     "DistrictName": "North And Middle Andaman",
     "Population": 105597
   },
@@ -3176,7 +3176,7 @@ var DistrictPopulationMapping =
     "Population": 41816
   },
   {
-    "StateName": "Andaman And Nicobar Islands",
+    "StateName": "Andaman_and_Nicobar_Islands",
     "DistrictName": "Nicobars",
     "Population": 36842
   },
