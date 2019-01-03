@@ -4,7 +4,7 @@ function matchingCriteria (e) {
 
     // Getting the form values and Verifying the null values.
 
-    var candidate = document.getElementById("candidate_name").value;
+//     var candidate = document.getElementById("candidate_name").value;
     var initialsNumber = document.getElementById("initials_number").value;
     var withoutInitials = document.getElementById("without_initials").value;
     var typeMatch = document.getElementById("type_of_match").value;
@@ -13,11 +13,12 @@ function matchingCriteria (e) {
     // alert(candidate + " " + initialsNumber + " " + withoutInitials + " " + typeMatch + " " + selectState + " " + selectDistricts);
     // console.log(candidate + " " + initialsNumber + " " + withoutInitials + " " + typeMatch + " " + selectState + " " + selectDistricts);
 
-    if (candidate == null || candidate == ""){
-      alert("Please Enter Candidate Name.");
-      return false;
-    }
-    else if(initialsNumber == null || initialsNumber == ""){
+//     if (candidate == null || candidate == ""){
+//       alert("Please Enter Candidate Name.");
+//       return false;
+//     }
+//     else 
+        if(initialsNumber == null || initialsNumber == ""){
       alert("Please Provide Number of Initials.");
       return false;
     }
@@ -174,11 +175,11 @@ function matchingCriteria (e) {
 
     // Formatted Output
 
-    var candidateOutput = `
-       <ul class = "list-group">
-        <li class = "list-group-item"><strong>Candidate Name: </strong> ${candidate}</li>
-       </ul>
-      `;
+//     var candidateOutput = `
+//        <ul class = "list-group">
+//         <li class = "list-group-item"><strong>Candidate Name: </strong> ${candidate}</li>
+//        </ul>
+//       `;
 
     var initialsNumberOutput = `
        <ul class = "list-group">
@@ -232,7 +233,7 @@ function matchingCriteria (e) {
 
     //Output For Display
 
-    document.getElementById("candidate_Output").innerHTML = candidateOutput;
+//     document.getElementById("candidate_Output").innerHTML = candidateOutput;
     document.getElementById("initialsNumber_Output").innerHTML = initialsNumberOutput;
     document.getElementById("withoutInitials_Output").innerHTML = withoutInitialsOutput;
     document.getElementById("typeMatch_Output").innerHTML = typeMatchOutput;
