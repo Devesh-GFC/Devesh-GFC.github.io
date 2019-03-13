@@ -155,6 +155,38 @@ function matchingCriteria (e) {
         return false;
       }
     }
+    else if (typeMatch == "Close-Match") {
+      //alert("Sub-Region");
+
+      // Default Close-Matc value is 1000.
+      var closeMatchPopulation=1000;
+
+      if (closeMatchPopulation > 0) {
+        MatchingPopulation = Math.pow((1-closeMatchPopulation/statePopulation), (WI-1))*100;
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
+        //alert(MatchingPopulation);
+      }
+      else {
+        alert("Please Enter Correct Value!");
+        return false;
+      }
+    }
+    else if (typeMatch == "Close") {
+      //alert("Sub-Region");
+
+      // Default Close value is 100.
+      var closePopulation=100;
+
+      if (closePopulation > 0) {
+        MatchingPopulation = Math.pow((1-closePopulation/statePopulation), (WI-1))*100;
+        // matchingPercentage = Math.round(MatchingPopulation) + "%";
+        //alert(MatchingPopulation);
+      }
+      else {
+        alert("Please Enter Correct Value!");
+        return false;
+      }
+    }
     else {
       alert("Cannot Found Data");
       return false;
