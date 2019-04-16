@@ -107,14 +107,14 @@ function matchingCriteria (e) {
     }
     else if (typeMatch == "State") {
       //alert("State");
-        MatchingPopulation = (1/WI)*100;
+        MatchingPopulation = (1/(WI*1.011))*100;
         // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
     }
     else if (typeMatch == "District") {
       //alert("District");
       if (districtPopulation > 0) {
-        MatchingPopulation = Math.pow((1-districtPopulation/statePopulation), (WI-1))*100;
+        MatchingPopulation = Math.pow((1-districtPopulation/statePopulation), (WI*1.011-1))*100;
         // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
@@ -130,7 +130,7 @@ function matchingCriteria (e) {
       pincodePopulation=64000;
 
       if (pincodePopulation > 0) {
-        MatchingPopulation = Math.pow((1-pincodePopulation/statePopulation), (WI-1))*100;
+        MatchingPopulation = Math.pow((1-pincodePopulation/statePopulation), (WI*1.011-1))*100;
         // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
@@ -146,7 +146,7 @@ function matchingCriteria (e) {
       sub_regionPopulation=5000;
 
       if (sub_regionPopulation > 0) {
-        MatchingPopulation = Math.pow((1-sub_regionPopulation/statePopulation), (WI-1))*100;
+        MatchingPopulation = Math.pow((1-sub_regionPopulation/statePopulation), (WI*1.011-1))*100;
         // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
@@ -158,11 +158,11 @@ function matchingCriteria (e) {
     else if (typeMatch == "Close-Match") {
       //alert("Sub-Region");
 
-      // Default Close-Matc value is 1000.
-      var closeMatchPopulation=1000;
+      // Default Close-Match value is 1000.
+      var closeMatchPopulation=100;
 
       if (closeMatchPopulation > 0) {
-        MatchingPopulation = Math.pow((1-closeMatchPopulation/statePopulation), (WI-1))*100;
+        MatchingPopulation = Math.pow((1-closeMatchPopulation/statePopulation), (WI*1.011-1))*100;
         // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
@@ -171,14 +171,14 @@ function matchingCriteria (e) {
         return false;
       }
     }
-    else if (typeMatch == "Close") {
+    else if (typeMatch == "Exact-Match") {
       //alert("Sub-Region");
 
-      // Default Close value is 100.
-      var closePopulation=100;
+      // Default Exact-Match value is 100.
+      var exactMatchPopulation=1;
 
-      if (closePopulation > 0) {
-        MatchingPopulation = Math.pow((1-closePopulation/statePopulation), (WI-1))*100;
+      if (exactMatchPopulation > 0) {
+        MatchingPopulation = Math.pow((1-exactMatchPopulation/statePopulation), (WI*1.011-1))*100;
         // matchingPercentage = Math.round(MatchingPopulation) + "%";
         //alert(MatchingPopulation);
       }
@@ -202,7 +202,7 @@ function matchingCriteria (e) {
     //   alert("After Color");
     // }
 
-    matchingPercentage = Math.round(MatchingPopulation) + "%";
+    matchingPercentage = (Math.round((MatchingPopulation)*100)/100) + "%";
 
 
     // Formatted Output
